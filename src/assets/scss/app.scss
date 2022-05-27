@@ -1,0 +1,487 @@
+/*
+Template Name: Shreyu - Responsive Bootstrap 4 Admin Dashboard
+Author: CoderThemes
+Version: 1.0.0
+Website: https://coderthemes.com/
+Contact: support@coderthemes.com
+File: Main Css File
+*/
+
+/* =======================
+    TABLE OF CSS
+    1. Fonts 
+    2. General 
+    3. Left Menu 
+    4. Topbar 
+    5. Page Head 
+    6. Footer 
+    7. Horizontal Nav 
+    8. Right Sidebar 
+    9. Layouts 
+    10. Helper 
+    11. Social 
+    12. Widgets 
+    13. Custom Checkbox 
+    14. Custom Radio 
+    15. Print 
+    16. Preloader 
+    17. Plugins 
+    18. Components Demo 
+    19. Tasks 
+    20. Email 
+    21. Timeline 
+    22. Extra Pages 
+    23. Authentication 
+   ======================= */
+
+.card-bottom-text {
+    height: 40px;
+    font-size: 12px;
+    min-height: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.min-height {
+    height: 420px !important;
+}
+
+.project-border {
+    box-shadow: 0px 1px 4px #c9c7c7;
+}
+.img-box {
+    min-height: 110px;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.doc-box {
+    box-shadow: 0px 1px 4px #c9c7c7;
+    padding: 0.4rem 1rem;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+}
+.badge {
+    font-size: 60% !important;
+}
+
+.border-left {
+    border-left: 1px solid black;
+}
+
+.board-row {
+    display: flex !important;
+    overflow-y: auto !important;
+    max-width: 100%;
+    min-width: 0;
+}
+
+.board-item {
+    min-width: 30% !important;
+    min-height: 70vh;
+    overflow-y: auto;
+}
+//Fonts
+/* 1. Fonts */
+@import 'custom/fonts/fonts';
+
+//Core files
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import 'variables';
+@import './node_modules/bootstrap/scss/mixins.scss';
+
+// Structure
+/* 2. General */
+@import 'custom/structure/general';
+/* 3. Left Menu */
+@import 'custom/structure/left-menu';
+/* 4. Topbar */
+@import 'custom/structure/topbar';
+/* 5. Page Head */
+@import 'custom/structure/page-head';
+/* 6. Footer */
+@import 'custom/structure/footer';
+/* 7. Horizontal Nav */
+@import 'custom/structure/horizontal-nav';
+/* 8. Right Sidebar */
+@import 'custom/structure/right-sidebar';
+/* 9. Layouts */
+@import 'custom/structure/layouts';
+
+//Components
+/* 10. Helper */
+@import 'custom/components/helper';
+/* 11. Social */
+@import 'custom/components/social';
+/* 12. Widgets */
+@import 'custom/components/widgets';
+/* 13. Custom Checkbox */
+@import 'custom/components/custom-checkbox';
+/* 14. Custom Radio */
+@import 'custom/components/custom-radio';
+/* 15. Print */
+@import 'custom/components/print';
+/* 16. Preloader */
+@import 'custom/components/preloader';
+
+// Plugins
+/* 17. Plugins */
+@import 'custom/plugins/slimscroll';
+@import 'custom/plugins/apexcharts';
+@import 'custom/plugins/calendar';
+@import 'custom/plugins/react-select';
+@import 'custom/plugins/multiple-select';
+@import 'custom/plugins/flatpickr';
+@import 'custom/plugins/bootstrap-touchspin';
+@import 'custom/plugins/parsley';
+@import 'custom/plugins/form-wizard';
+@import 'custom/plugins/editor';
+@import 'custom/plugins/dropzone';
+@import 'custom/plugins/datatable';
+@import 'custom/plugins/table-list-js';
+@import 'custom/plugins/kanban';
+@import 'custom/plugins/metismenu';
+
+//Pages
+/* 18. Components Demo */
+@import 'custom/pages/components-demo';
+/* 19. Tasks */
+@import 'custom/pages/tasks';
+/* 20. Email */
+@import 'custom/pages/email';
+/* 21. Timeline */
+@import 'custom/pages/timeline';
+/* 22. Extra Pages */
+@import 'custom/pages/extra-pages';
+/* 23. Authentication */
+@import 'custom/pages/authentication';
+
+.modal {
+    background-color: #838383b3 !important;
+}
+.custom-title {
+    margin: 0px !important;
+}
+
+.custom-title:first-letter {
+    text-transform: capitalize;
+}
+
+textarea {
+    resize: none;
+}
+
+.check-circule-btn {
+    background-color: #5369f8;
+    height: 25px;
+    border-radius: 12px;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+.check-circule {
+    background-color: #5369f8;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.scrollbar-container-chat {
+    position: relative;
+    height: 100%;
+    //max-height: 320px;
+    width: 100%;
+    overflow-y: auto !important;
+}
+.delete-btn {
+    background-color: #ff1010;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.modal-header {
+    button {
+        position: absolute !important;
+        top: 2px;
+        right: 5px;
+    }
+}
+textarea.mod-card-back-title {
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    font-size: 20px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 24px;
+    margin: -4px -8px;
+    min-height: 24px;
+    padding: 4px 8px;
+    resize: none;
+}
+
+textarea.mod-card-back-title:focus {
+    background-color: #fff;
+    box-shadow: inset 0 0 0 2px #0079bf;
+    line-height: 24px;
+    margin: -4px -8px;
+    min-height: 32px;
+    padding: 4px 8px;
+    resize: none;
+}
+
+.input-textarea {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #5a5a5a;
+    border: none;
+    width: 98%;
+    -moz-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: inner 0 0 4px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.input-textarea:focus {
+    outline: none !important;
+    border-color: #719ece;
+    box-shadow: 0 0 0 2px #719ece;
+}
+
+.add-member {
+    cursor: pointer;
+    background-color: rgba(83, 105, 248, 0.25) !important;
+    border-radius: 50%;
+    line-height: 2.5;
+    padding-left: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 5px;
+    background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #7295fc;
+}
+
+.custom-elipsis {
+    font-size: 12px;
+    min-height: 3.5rem;
+    /* overflow: hidden; */
+    /* white-space: pre; */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.custom-elipsis-doc {
+    font-size: 12px;
+    // min-height: 3.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.left-side-menu {
+    width: 12rem !important;
+}
+.icon-size {
+    font-size: 20px;
+}
+
+.icon-height {
+    margin-top: -11%;
+    color: #5369f8;
+}
+
+.button-align {
+    display: flex;
+    justify-content: center;
+}
+
+.card-height {
+    margin-top: 15%;
+}
+
+.heading-height {
+    margin-top: -3%;
+}
+
+.dropdown {
+    margin-left: auto;
+}
+
+.button-height {
+    margin-top: -1%;
+}
+
+.input-field {
+    border: none;
+    font-size: 14px;
+    padding: 0;
+    text-align: left;
+    width: 60% !important;
+    cursor: pointer;
+    &:focus {
+        border-bottom: 1px solid #5369f8;
+        border-radius: 0px;
+    }
+}
+
+.title-length {
+    margin-left: -4%;
+}
+
+.card-title {
+    margin-left: -8%;
+    margin-bottom: -10%;
+}
+.header-input {
+    width: 60%;
+}
+.modal-title {
+    width: 100%;
+}
+.notAdminGroup {
+    display: none;
+}
+
+.api-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+}
+
+.loader-spinner {
+    position: absolute;
+    z-index: 1;
+    top: 45%;
+    left: 45%;
+    bottom: 0;
+    right: 0;
+}
+
+.comments-box {
+    // overflow-y: auto;
+    // height: 20%;
+    margin-top: 5em;
+}
+// .boards-loader {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     bottom: 0;
+//     right: 0;
+// }
+
+.card-border {
+    border: 1px solid #f3f3f3f5;
+}
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.task-list::-webkit-scrollbar {
+    width: 5px;
+    /* width of the entire scrollbar */
+}
+.task-list::-webkit-scrollbar-track {
+    background: none; /* color of the tracking area */
+}
+.task-list::-webkit-scrollbar-thumb {
+    background-color: #838486; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    // border: 2px solid #5166F0;  /* creates padding around scroll thumb */
+}
+.task-list {
+    padding: 5px;
+}
+.task-avatar {
+    border-radius: 15px;
+    background-color: #8a8a8b;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
+
+.skeleton-loader:empty {
+    width: 100%;
+    height: 15px;
+    display: block;
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%
+        ),
+        lightgray;
+    background-repeat: repeat-y;
+    background-size: 50px 500px;
+    background-position: 0 0;
+    animation: shine 1s infinite;
+}
+
+.empty-box {
+    width: 14rem;
+    margin-left: 10px;
+    background-color: #dbdbdb;
+    height: 9rem;
+    background: linear-gradient(
+            to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.5) 50%,
+            rgba(255, 255, 255, 0) 80%
+        ),
+        lightgray;
+    background-repeat: repeat-y;
+    background-size: 50px 500px;
+    background-position: 0 0;
+    animation: shine 1s infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 100% 0;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.file-card {
+    max-height: 32px;
+}
+
+.file-card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 75%;
+}

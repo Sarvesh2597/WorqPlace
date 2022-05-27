@@ -1,0 +1,12 @@
+div .ql-container.ql-snow {
+    border: none;
+}
+div .ql-color .ql-picker .ql-color-picker .ql-expanded {
+    position: absolute;
+    z-index: 9;
+    bottom: 180px;
+}
+.ql-tooltip {
+    left: 10px;
+    top: 0px;
+}
